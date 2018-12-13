@@ -1,0 +1,85 @@
+.team{
+  background-color: #111111;
+  text-align: center;
+  padding: 3rem 0;
+  .section-header{
+    h2{
+      color: #fff;
+    }
+    p{   
+      color: #777777;
+    }
+  }
+ 
+}
+.member-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  li{
+    margin: 2rem 0;
+  }
+}
+.photo-member{
+  width: 234px;
+  height: 234px;
+  border-radius: 50%;
+  border: 7px solid #ffffff;
+  background-color: transparent; 
+  margin-bottom: 2rem;
+}
+.member-name {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-family: "Brandon-Bold";
+  font-weight: 700;
+  letter-spacing: -0.45px;
+  margin-bottom: 0.5rem;
+}
+.position{
+  color: #ebebeb;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.4px;
+  margin-bottom: 1rem;
+}
+
+.social{
+  display: flex;
+  justify-content: center;
+  a{
+    width: 41px;
+    height: 41px;
+    color: #fff;
+    border: 3px solid #ffffff;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    line-height: 40px;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    &:hover .fab{
+      transform: scale(1.2);
+    }
+  }
+}
+@media (min-width: 576px) {
+  
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  
+  
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+  .member-list{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+ 
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  
+}

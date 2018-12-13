@@ -1,0 +1,104 @@
+.services{
+  .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2rem 1rem 1rem;
+  }
+}
+.services-list{
+  li{
+    &:nth-child(1) .service-icon{
+      background-image: url("./../img/Flow_Tree-Icon.svg");
+    }
+    &:nth-child(2) .service-icon{
+      background-image: url("./../img/Users-Icon.svg");
+    }
+    &:nth-child(2n+2){
+      background-color: #fafafa;
+    }
+  }
+}
+.service-description{
+  order: 2;
+  width: 100%;
+  overflow: hidden;
+  h2{
+    color: #222222;
+    font-family: "Brandon-Light";
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: -1.5px;
+    margin-bottom: 2rem;
+    text-align: center;
+    span{
+      font-family: "Brandon-Bold";
+      font-weight: 700;
+    }
+  }
+  p{
+    color: #777777;
+    font-family: "Brandon";
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.45px;
+    margin-bottom: 1rem;
+  }
+}
+.service-icon{
+  order: 1;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+}
+@media (min-width: 576px) { 
+  
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+  .services-list{
+    li{
+      padding: 3rem 0 2rem;
+      &:nth-child(2n-1) .service-icon{
+        order: 2;
+      }
+      &:nth-child(2n-1) .service-description{
+        order: 1;
+      }
+    }
+ }
+  .service-description{
+    width: 70%;
+    h2{
+      text-align: left;
+      font-size: 3.75rem;
+    }
+    p{
+      margin-bottom: 2rem;
+    }
+  }
+ .service-icon{
+  height:auto;
+  width: 25%;}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+  .services{
+    .container{
+      padding: 1rem;
+    }
+  } 
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .services-list{
+    li{
+      padding: 6rem 0 2rem;
+    }
+ }
+}

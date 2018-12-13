@@ -1,0 +1,21 @@
+@import url('./../fonts/Cubano.ttf');
+@import url('./../fonts/BrandonGrotesque-Bold.ttf');
+@import url('./../fonts/BrandonGrotesque-Medium.ttf');
+@import url('./../fonts/BrandonGrotesque-Regular.ttf');
+//@import url('./../fonts/BrandonText-Light.ttf');
+
+@font-face {
+   font-family: 'Brandon-Light';
+   src: url("../fonts/BrandonText-Light.ttf") ;
+   font-weight: 300;
+}
+@font-face {
+   font-family: 'Brandon-Bold';
+   src: url("../fonts/BrandonGrotesque-Bold.ttf") ;
+   font-weight: 700;
+}
+@font-face {
+   font-family: 'Brandon';
+   src: url("../fonts/BrandonGrotesque-Regular.ttf") ;
+   font-weight: 400;
+}

@@ -1,0 +1,59 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: "Brandon";
+}
+.container{
+  max-width: 940px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.section-header{
+  h2{
+    font-size: 3.67rem;
+    font-weight: 300;
+    font-family: "Brandon-Light";
+    font-weight: 300;
+    letter-spacing: -1.5px;
+    margin-bottom: 1rem;}
+    span{
+      font-family: "Brandon-Bold";
+      font-weight: 700;
+    }
+    p{
+      width: 85%;
+      font-size: 1.35rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      letter-spacing: -0.55px;
+      text-align: center;
+      margin: 0 auto;
+    }
+}
+
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .container{
+    padding: 0 1rem;
+  }
+  
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .container{
+      padding: 0;
+    }
+    
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }

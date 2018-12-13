@@ -1,0 +1,17 @@
+.logos{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  li{
+    width: 23%;
+  }
+  img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+  }
+}

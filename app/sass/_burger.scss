@@ -1,0 +1,67 @@
+$burger-color: #fff;
+$burger-opacity: 1;
+
+
+.burger-wraper {
+  display: block;
+  position: relative;
+  width: 22px;
+  height: 22px;
+    }
+.burger {
+  top:44%;
+  left: 3px;
+  width: 22px;
+  height: 3px;
+  position: absolute;
+  z-index: 999;
+  opacity: $burger-opacity;
+  background-color: $burger-color; 
+}
+
+.burger::before, .burger::after {
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 3px;
+  background-color: $burger-color;
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0;
+  content: ' '; }
+
+.burger::before {
+  transition-property: top, transform;
+  bottom: 8px; }
+
+.burger::after {
+  transition-property: bottom, transform;
+  top: 8px; }
+
+.burger-active{
+  background: none;
+}
+.burger-active::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+.burger-active::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+.burger-active::after, .burger-active::before{
+  transition-delay: 0, 0.3s;
+}
+
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .burger-wraper {
+  display: none;}
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }

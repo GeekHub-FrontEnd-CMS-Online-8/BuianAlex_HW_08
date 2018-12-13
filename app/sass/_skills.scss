@@ -1,0 +1,98 @@
+.skills{
+  padding: 3rem 1rem 1rem;
+}
+.skill-icon{
+  min-width: 70px;
+  min-height: 70px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35px 35px;
+}
+.skill-list{
+  @extend %flex-jst-btw;
+  flex-wrap: wrap;
+  li{
+    width: 100%;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    &:nth-child(1) .skill-icon{
+      background-image: url("./../img/Person-Icon.svg");
+    }
+     &:nth-child(2) .skill-icon{
+      background-image: url("./../img/Browser-Icon.svg");
+    }
+     &:nth-child(3) .skill-icon{
+      background-image: url("./../img/iPad-Icon.svg");
+    }
+     &:nth-child(4) .skill-icon{
+      background-image: url("./../img/Video-Icon.svg");
+    }
+     &:nth-child(5) .skill-icon{
+      background-image: url("./../img/Star-Icon.svg");
+    }
+     &:nth-child(6) .skill-icon{
+      background-image: url("./../img/Camera.svg");
+    } 
+  }
+}
+.skill-description{
+  width: 100%;
+  h2{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #222222;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: -0.55px;
+  }
+  p{
+    color: #777777;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.1rem;
+    letter-spacing: -0.45px;
+  }
+}
+@media (min-width: 576px) { 
+  .skill-list{
+    li{
+      width: 48%;
+    }
+  }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+.skills{
+  padding: 6rem 1rem 1rem;
+} 
+  .skill-list{
+    li{
+      flex-direction: row;
+      align-items: flex-start;
+      width: 48%;
+    }
+  }
+  .skill-description{
+    width: 70%;
+    h2{
+      text-align: left;
+    }
+  }
+
+
+  
+
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }
