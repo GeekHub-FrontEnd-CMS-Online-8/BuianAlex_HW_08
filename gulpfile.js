@@ -80,7 +80,7 @@ const watch = gulp.series(createCss, libScripts, createBrowserSync, function (cd
 
 
 const cleanDist = function (cd) {
-	del.sync('dist'); // Удаляем папку dist перед сборкой
+	del.sync('build'); // Удаляем папку dist перед сборкой
 	cd();
 };
 
@@ -88,24 +88,24 @@ gulp.task('build', gulp.series(cleanDist, createCss, function (cd) {
 			var buildCss = gulp.src([ // Переносим библиотеки в продакшен
 				'app/css/*',
 			])
-				.pipe(gulp.dest('dist/css'))
+				.pipe(gulp.dest('build/css'))
 
 			var buildFonts = gulp.src('app/fonts/**/*') // Переносим шрифты в продакшен
-				.pipe(gulp.dest('dist/fonts'))
+				.pipe(gulp.dest('build/fonts'))
 
 			var buildJs = gulp.src('app/js/**/*')
 				.pipe(babel({
 					presets: ['@babel/env']
 				})) // Переносим скрипты в продакшен
-				.pipe(gulp.dest('dist/js'))
+				.pipe(gulp.dest('build/js'))
 
 			var buildHtml = gulp.src('app/*.html')// Переносим HTML в продакшен
 				.pipe(rigger()) //собираем кумки html
-				.pipe(gulp.dest('dist'));
+				.pipe(gulp.dest('build'));
 
 			var imagMin = gulp.src('app/img/*')
 				.pipe(imagemin())
-				.pipe(gulp.dest('dist/img'));
+				.pipe(gulp.dest('build/img'));
 			cd();
 		}));
 
